@@ -34,6 +34,11 @@ $('#id_textarea').replaceSelection('new text here');
 
 ```
 
+getSelection return sample:
+```json
+{start: 162, end: 171, length: 9, text: "Selected text here"}
+```
+
 ## Gratitude 
 
 Thankyou to [localhost](https://github.com/localhost) a person who started this plugin.
@@ -44,7 +49,8 @@ Thankyou to [localhost](https://github.com/localhost) a person who started this 
            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
                    Version 2, December 2004 
 
-Copyright (C) 2006 Alex Brem <alex@0xab.cd>
+Copyright (C) 2017 Nikolas Leite 
+              2006 Alex Brem <alex@0xab.cd>
 Everyone is permitted to copy and distribute verbatim or modified 
 copies of this license document, and changing it is allowed as long 
 as the name is changed. 
