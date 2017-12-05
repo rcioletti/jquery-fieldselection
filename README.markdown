@@ -1,6 +1,6 @@
 # jQuery - fieldSelection
 
-A jQuery plugin to get'n'set the caret/selection.
+A jQuery plugin to get'n'set the caret/selection.  
 
 ## Description
 
@@ -14,13 +14,24 @@ support the easy DOM 3.0 methods.
 
 First public release: `getSelection` and `replaceSelection` basically works.
 
-Check my [blog](http://blog.0xab.cd) or the
-[fieldSelection](http://laboratorium.0xab.cd/jquery/fieldselection/) page
-for further updates.
-
 ## Requirements
 
 [jQuery](http://jquery.com) (tested with version 1.0.2+)
+
+## Usage sample
+
+```js
+//Get Selected text
+var selectedText = $('#id_textarea').getSelection();
+           
+//Replacing selection
+$('#id_textarea').replaceSelection('new text here');
+
+```
+
+## Gratitude 
+
+Thankyou to [localhost](https://github.com/localhost) a person who started this plugin.
 
 ## License
 
