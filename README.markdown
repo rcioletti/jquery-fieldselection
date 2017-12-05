@@ -20,6 +20,11 @@ First public release: `getSelection` and `replaceSelection` basically works.
 
 ## Usage sample
 
+```html
+<script type="text/javascript" src="jquery-fieldselection.js"></script>
+
+```
+
 ```js
 //Get Selected text
 var selectedText = $('#id_textarea').getSelection();
