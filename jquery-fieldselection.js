@@ -1,6 +1,7 @@
 /*
- * jQuery plugin: fieldSelection - v0.1.1 - last change: 2006-12-16
- * (c) 2006 Alex Brem <alex@0xab.cd> - http://blog.0xab.cd
+ * jQuery plugin: fieldSelection - v0.1.2 - last change: 2017/12/05
+ * Sustained by Nikolas Leite - https://github.com/nikolasmagno
+ * Started by (c) 2006 Alex Brem <alex@0xab.cd> - http://blog.0xab.cd
  */
 
 (function() {
@@ -46,7 +47,7 @@
 
 		replaceSelection: function() {
 
-			var e = (typeof this.id == 'function') ? this.get(0) : this;
+			var e = (this.jquery) ? this[0] : this;
 			var text = arguments[0] || '';
 
 			return (
