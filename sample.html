@@ -245,7 +245,9 @@
     </style>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="jquery-fieldselection.js"></script>
+
     <script type="text/javascript">
+	
         $(function() {
                 $('#get').click(function(){ 
                     if($('#testInput').getSelection().text)
@@ -255,8 +257,11 @@
                     });
 
                 $('#replace').click(function(){
-                    $('#testInput').replaceSelection("HEY LOOK, REPLACE WORK'S FINE");
+                    $('#testInput').replaceSelection($('#replaceTxt').val());
                     });
+				$('replaceAll').click(function(){
+					
+				});	
                
         });
     </script>
@@ -291,9 +296,11 @@ Lelelelele
 Tralalalala
 Sample sample
                           </textarea>
-
+						  <span>Text to replace:</span><br>
+						  <input type="text" id="replaceTxt"><br><br>
                           <button id="get">Alert Selection</button> 
-                          <button id="replace">Replace Selection</button> 
+                          <button id="replace">Replace Selection</button>
+						  <button id="replaceAll">Replace All</button>						  
                       </td>
                     </tr>
                   </table>
